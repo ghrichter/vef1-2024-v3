@@ -154,11 +154,11 @@ section {
   display: block;
 }
 
-
+/* held þetta sé ekki að gera neitt fyrir mig
 section img {
   margin: 1rem;
 }
-
+*/
 
 /* TODO Skilgreina aðra selectora fyrir meginmál of forsíðu */
 
@@ -167,9 +167,6 @@ section img {
   float: right;
   max-width: 600px;
   vertical-align: top;
-}
-.frontpage main {
-  text-align: left;
 }
 
 /** Fótur **/
@@ -213,7 +210,7 @@ table {
 }
 table td {
   margin-right: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: left;
 }
 table th {
@@ -226,6 +223,7 @@ table th:first-child {
 }
 table img {
   min-width: 200px;
+  vertical-align: middle;
 }
 
 tbody tr:nth-child(odd) {
@@ -235,6 +233,25 @@ tbody tr:nth-child(odd) {
 /* TODO Skilgreina aðra selectora fyrir töflu */
 
 /** Viðburðir **/
+.page2 section {
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  min-height: 180px;
+}
+.page2 section p {
+  margin-left: 210px;
+}
+.page2 section p:last-child {
+  margin-top: 4rem;
+  /* ég veit ekki hvernig ég gæti fært þetta niður með CSS án þess að breyta því í HTML */
+}
+.page2 h3 {
+  margin-bottom: 1rem;
+}
+.page2 img {
+  float: left;
+}
 
 .event {
   /* TODO Skilgreina, gerum ráð fyrir að hver viðburður hafi eigin selector */
@@ -243,8 +260,41 @@ tbody tr:nth-child(odd) {
 /* TODO Skilgreina aðra selectora fyrir viðburði */
 
 /** Skráningarform **/
-form {
-
+.page4 {
+  margin-left: 2rem
 }
 
+form {
+  
+}
+form fieldset {
+  border: 0px;  
+}
+form legend {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+form fieldset div label {
+  display: block;
+}
+form select,
+form textarea, 
+form input {
+  min-width: 250px;
+  margin-bottom: 1rem;
+}
+.checkbox input {
+  min-width: 0px;
+}
+.checkbox input:last-child {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+form button {
+  border-radius: 5px;
+  background-color: #eebbdd;
+  margin-bottom: 1rem;
+}
 /* TODO Skilgreina */
